@@ -1,0 +1,1 @@
+document.getElementById("random").addEventListener("click",(function(){!function(){let t=(n=6,Math.random().toString(36).substring(n));var n;document.getElementById("password").value=t}()}));

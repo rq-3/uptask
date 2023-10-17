@@ -1,0 +1,321 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.trabajo{
+    margin-top: 3rem;
+ 
+
+    &_panel{
+        display: flex;
+        gap: 1rem;
+    }
+    &_contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        background-color: v.$blanco;
+        padding: 1rem;
+    }
+    &_grid{
+        background-color: v.$blanco;
+        width: 95%;
+        margin: 0 auto;
+     
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+        &:hover{
+    box-shadow: 1px 12px 9px -13px rgba($color: #000000, $alpha: .4);
+}
+    }
+    &_caja{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+
+        p{
+            margin: 0;
+
+            span{
+                font-weight: bold;
+                font-size: 1.8rem;
+                color: #19a1c7;
+            }
+        }
+        &:hover{
+            border-color: v.$primario;
+        }
+
+        &_datos2{
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            align-items: center;
+            
+           
+        }
+        &_botones{
+            display: flex;
+            flex-direction: row;
+            gap: .2rem;
+            
+        }
+
+    }
+    &_empresa{
+        color: v.$primario;
+        font-weight: bold;
+        font-size: 1.8rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        border-right: 2px solid v.$claro1;
+    }
+    &_orden{
+        color: v.$primario;
+        font-size: 1.6rem;
+        padding-right: 2rem;
+        border-right: 2px solid v.$claro1;
+    }
+    &_status{
+        color: v.$negro;
+        font-weight: 700;
+        font-size: 1.6rem;
+
+    }
+    &_fecha{
+        font-size: 1.6rem;
+        .factu{
+            color: #990303;
+        }
+    }
+    &_id{
+        padding-left: 1rem;
+       
+    }
+
+}
+
+.btn{
+    
+
+
+    &_ver{
+        padding: .5rem;
+        border: 2px solid v.$claro1;
+        border-radius:.5rem;
+        transition: transform border-color;
+        transition-duration: 300ms;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     
+    
+        &:hover{
+            border-color: v.$ver;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        img{
+            width: 3rem;
+            margin: auto;
+            
+        }
+        
+
+    }
+
+    &_editar{
+        padding: .5rem;
+        border: 2px solid v.$claro1;
+        border-radius:.5rem;
+        transition: transform border-color;
+        transition-duration: 300ms;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover{
+            border-color: v.$editar;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        img{
+            width: 3rem;
+            margin: auto;
+            
+        }
+    }
+}
+
+.pago_folio{
+    background-color: v.$gris;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    color: v.$blanco;
+    font-weight: bold;
+
+    .folio_pago{
+        color: v.$blanco;
+        border-right: 2px solid v.$claro1;
+        padding-right: 2rem;
+        margin-left: 1rem;
+    }
+    .pago_barra{
+        margin-left: 2rem;
+        color: v.$blanco;
+        
+    }
+    .folio_orden{
+        border-left: 2px solid v.$claro1;
+        margin-left: 2rem;
+        padding-left: 2rem;
+    }
+
+}
+.ver_pago{
+
+    &_caja{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: v.$blanco;
+    padding: 0 1rem 0 1rem;
+    border-radius: 1.5rem;
+    &:first-child{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .s1{
+       border-color: v.$programa;
+        
+    }
+    .s2{
+       border-color: v.$capacitacion;
+        
+    }
+    .s3{
+       border-color: v.$simulacro;
+        
+    }
+    .s4{
+       border-color: v.$dictamen;
+        
+    }
+    .s5{
+       border-color: v.$dictamen;
+        
+    }
+    .s6{
+       border-color: v.$vistobueno;
+        
+    }
+    .s7{
+       border-color: v.$licencia;
+        
+    }
+    .s8{
+       border-color: v.$giro;
+        
+    }
+    .s9{
+       border-color: v.$opinion;
+        
+    }
+
+    }
+    &_caja2{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        background-color: v.$blanco;
+        padding: 0 1rem 0 1rem;
+        border-radius: 1.5rem;
+
+        label{
+            margin-bottom: .5rem;
+        }
+        input{
+            border: 1px solid v.$claro1;
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+ 
+        .caja_pago_obs{
+            width: 100%;
+            border: none;
+            padding: 2rem;
+
+        }
+        
+    }
+    .btn_pago{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .boton_pago{
+        background-color: v.$indigo;
+        color: v.$blanco;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+        width: 20rem;
+        border: none;
+        border-radius: 1rem;
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+.servicaja{
+    font-size: 1.8rem;
+    border-left: 5px solid;
+    height: 2rem;
+    padding-left: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.heading-servi{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+.pago_dato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    
+    span{
+       color: v.$gris;
+       font-weight: 400;
+       font-size: 2rem;
+    }
+}
+.caja_pago_obs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

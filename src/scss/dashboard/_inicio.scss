@@ -1,0 +1,108 @@
+@use 'base/variables' as v;
+
+
+.clase_inicio_uno{
+
+    padding: 1rem;
+    height: auto;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: .5rem;
+  
+
+}
+.clase_incio_dos{
+    margin-bottom: 2rem;
+    .agenda_inicio{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+.heading{
+    margin: 0;
+    border-bottom: 1px solid v.$gris;
+    margin-bottom: 1rem;
+    width: 20rem;
+}
+.ordenPendiente{
+    border: 1px solid v.$claro1;
+    padding: 1rem;
+}
+.servicioPendiente{
+    background-color: v.$blanco;
+    box-shadow: .2rem .3rem .3rem v.$claro1;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    width: 19rem;
+    height: 10rem;
+    text-align: center;
+
+
+    a{
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover{
+            cursor: pointer;
+
+        }
+    }
+}
+.servi{
+    font-size: 1.7rem;
+    color: #000;
+    span{
+        display: block;
+        color: v.$claro1;
+    }
+    
+    
+}
+.e{
+    font-size: 1.9rem;
+    color: v.$ver;
+    font-weight: bold;
+    }
+    .sin-eventos{
+        width: 40rem;
+    }
+.separacion{
+    margin-top: 2rem;
+}
+    .movimientos{
+        overflow-y: scroll;
+        max-height: 30rem;
+        padding-right: 1rem;
+        &_caja{
+            border-radius: 1rem;
+            background-color: v.$blanco;
+            display: flex;
+            margin-bottom: .5rem;
+            justify-content: space-between;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            
+
+            p{
+                margin: 0;
+                padding: .5rem;
+                display: flex;
+                align-items: center;
+                span{
+                    border-right: 2px solid v.$claro1;
+                    height: 3rem;
+                    margin-left: 1rem;
+                }
+            }
+            .folio{
+                color: v.$ver;
+                font-weight: bold;
+            }
+            img{
+                width: 2rem;
+                margin-right: .5rem;
+            }
+
+            
+        }
+    }

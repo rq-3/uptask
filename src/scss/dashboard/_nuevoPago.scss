@@ -1,0 +1,120 @@
+@use 'base/variables' as v;
+
+
+.caja_pago{
+    background-color: v.$blanco;
+    border: 1px solid v.$claro1;
+    padding-top: 5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .campo{
+        width: 70rem;
+        margin-bottom: 3rem;
+
+        label{
+            min-width: 20rem;
+            margin: 0;
+            font-size: 2rem;
+            margin-right: 4rem;
+            display: flex;
+            align-items: center;
+            img{
+                width: 4rem;
+                margin-right: 2rem;
+            }
+        }
+        .radios_anticipo{
+            display: flex;
+            width: 20rem;
+            margin-right: 4rem;
+
+            label{
+                min-width: 1rem;
+                padding: 1rem;
+                img{
+                    width: 4rem;
+                }
+
+            }
+            .btn{
+                border-radius: .5rem;
+                transition-property: transform;
+                transition-duration: 300ms;
+                font-weight: bold;
+
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+
+            .radios_anticipo_pe{
+               background-color: rgb(255, 191, 71);
+               padding: 1rem;
+               min-width: 12rem;
+               margin-left: 1rem;
+               text-align: center;
+            }
+            .radios_anticipo_pa{
+                background-color: rgb(84, 215, 255);
+                padding: 1rem;
+                min-width: 10rem;
+                margin-left: 1rem;
+                text-align: center;
+
+            }
+        }
+        input[type="number"],
+        input[type="date"]{
+            border: 1px solid v.$claro1;
+
+            &:hover{
+                box-shadow: .2rem .3rem .3rem v.$claro1;
+            }
+            &:focus{
+                box-shadow: .2rem .3rem .3rem v.$claro1;
+
+            }
+        }
+        textarea{
+            border: 1px solid v.$claro1;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+    }
+}
+.btn_ant{
+    transition-property: transform;
+    transition-duration: 300ms;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+.boton_pagos{
+    width: 30rem;
+}
+.anticipo_btn{
+   display: flex;
+   justify-content: center;
+   margin-top: 2rem;
+}
+.campo_anticipo{
+
+    visibility: hidden;
+}
+.anticipo_activo{
+    visibility: visible;
+    input[type="text"]{
+        border: 1px solid v.$gris;
+        min-width: 22rem;
+    }
+
+}
+.anticipo_desactivo{
+    visibility: hidden;
+}

@@ -1,0 +1,128 @@
+@use 'base/variables' as v;
+
+.foliorden{
+    text-align: center;
+    background-color: v.$gris;
+    color: v.$blanco;
+    padding: 1rem;
+    border-radius: 2.5rem;
+    font-weight: bold;
+
+    &_folio{
+        margin-right: 2rem;
+    }
+
+    &_barra{
+        border-left: 2px solid v.$claro1;
+        padding-left: 2rem;
+    }
+
+    
+}
+.c1{
+    border-bottom: 3px solid v.$programa;
+}
+.c2{
+    border-bottom: 3px solid v.$capacitacion;
+}
+.c3{
+    border-bottom: 3px solid v.$simulacro;
+}
+.c4{
+    border-bottom: 3px solid v.$dictamen;
+}
+.c5{
+    border-bottom: 3px solid v.$dictamen;
+}
+.c6{
+    border-bottom: 3px solid v.$vistobueno;
+}
+.c7{
+    border-bottom: 3px solid v.$licencia;
+}
+.c8{
+    border-bottom: 3px solid v.$giro;
+}
+.c9{
+    border-bottom: 3px solid v.$opinion;
+}
+.c10{
+    border-bottom: 3px solid v.$tramite;
+}
+
+.caja_listado{
+    background-color: v.$blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    p{
+        padding-right: 1rem;
+        margin: 0;
+        text-align: center;
+
+        span{
+            display: block;
+            font-size: 1.5rem;
+            margin: 0;
+            color: v.$secundario;
+            font-weight: bold;
+        }
+    }
+    &_servicio{
+        width: 25rem;
+        color: v.$gris;
+    }
+    &_obs{
+        font-size: 1.3rem;
+        min-height: 10rem;
+        max-width: 40rem;
+    }
+    .listado_salto{
+        display: flex;
+        justify-content: space-between;
+
+        .btn_estados{
+            margin-right: 1rem;
+            border: 1px solid v.$claro1;
+            border-radius: 2.5rem;
+            height: 3rem;
+            width: 12rem;
+            transition-property: transform;
+            transition-duration: 300ms;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+
+        }
+    }
+}
+
+.listado_salto2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    input{
+        border: 1px solid v.$claro1;
+       
+    }
+    .editob{
+        width: 30rem;
+        height: 6rem;
+        font-size: 1.3rem;
+    }
+
+}
+
+.Pendiente{
+    background-color: rgb(255, 136, 0);
+}
+.Completado{
+    background-color: rgb(0, 132, 255);
+    color: v.$blanco;
+}

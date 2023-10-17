@@ -1,0 +1,36 @@
+@use 'base/variables' as v;
+
+.fondo_blanco_cliente{
+    
+    .campo{
+
+        label{
+            width: 20rem;
+        }
+        input{
+            border: 1px solid v.$claro1;
+        }
+    }
+
+
+
+    .iconosClientes{
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        min-width: 20rem;
+        
+
+        img{
+            width: 4rem;
+            margin-right: 1rem;
+        }
+    }
+
+
+}
+
+.boton_clientes{
+    margin: 0 auto;
+    min-height: 6rem;
+}

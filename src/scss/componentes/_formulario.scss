@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario{
+    margin-top: 5rem;
+
+    .campo{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+       
+    }   
+    label{
+        flex: 0 0 10rem;
+    }
+    input, select{
+        padding: 1rem;
+        border-radius: .5rem;
+        border: none;
+        width: 100%;
+        background-color: rgb(243, 243, 243);
+    }
+
+    .text-center{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+}
